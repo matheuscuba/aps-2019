@@ -1,5 +1,7 @@
-Para rodar:
+Para rodar para Desenvolvedores:
 
 `npm i`
 
-No Chrome abrir _Extensões_ -> _Carregar extensão decompactada_ 
+#Para Rodar Extensão
+
+No Chrome abrir _Extensões_ -> _Carregar extensão decompactada_ -> _Selecionar pasta da extensão_
