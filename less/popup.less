@@ -1,0 +1,63 @@
+@button-color: #1AAB8A;
+
+body{
+    width: 300px;
+    height: 250px;
+    padding: 0 10px 10px;
+
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        textarea{
+            width: 100%;
+            height: 150px;
+            resize: none;
+            border-radius: 5px;
+        }
+
+        button{
+            margin-top: 15px;
+            background: @button-color;
+            color:#fff;
+            border:none;
+            position:relative;
+            height: 30px;
+            font-size:1.6em;
+            padding:0 2em;
+            cursor:pointer;
+            transition:800ms ease all;
+            outline:none;
+
+            &:hover{
+                background:#fff;
+                color:@button-color;
+
+                &::before, &::after{
+                    width:100%;
+                    transition:800ms ease all;
+                }
+            }
+
+            &::before, &::after{
+                content:'';
+                position:absolute;
+                top:0;
+                right:0;
+                height:2px;
+                width:0;
+                background: @button-color;
+                transition:400ms ease all;
+            }
+
+            &::after{
+                right:inherit;
+                top:inherit;
+                left:0;
+                bottom:0;
+            }
+        }
+    }
+}  

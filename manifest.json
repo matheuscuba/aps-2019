@@ -1,0 +1,20 @@
+{
+  "name" : "APS FSG 2019 - Bug Report",
+  "version" : "1.0",
+  "description" : "Utilize e configure essa extensão para reportar erros em suas aplicaçãoes",
+  "background": { "scripts": ["js/popup.js"] },
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "http://www.webhook.site/*"
+  ],
+  "web_accessible_resources": [
+      "libs/*"
+    ],
+  "browser_action": {
+     "default_icon": "images/icon.png",
+     "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
